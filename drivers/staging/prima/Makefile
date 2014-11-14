@@ -535,8 +535,7 @@ endif
 
 CDEFINES += -DWLAN_FEATURE_11AC
 
-# Fix build for GCC 4.7
-EXTRA_CFLAGS += -Wno-maybe-uninitialized -Wno-unused-function -Wno-array-bounds
+CDEFINES += -DWLAN_OPEN_SOURCE
 
 KBUILD_CPPFLAGS += $(CDEFINES)
 

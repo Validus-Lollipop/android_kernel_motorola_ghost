@@ -667,7 +667,7 @@ int jbd2_log_wait_commit(journal_t *journal, tid_t tid)
 
 int jbd2_journal_next_log_block(journal_t *journal, unsigned long long *retp)
 {
-	unsigned long blocknr = 0;
+	unsigned long blocknr;
 
 	write_lock(&journal->j_state_lock);
 	J_ASSERT(journal->j_free > 1);
